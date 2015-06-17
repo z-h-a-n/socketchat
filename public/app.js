@@ -20,7 +20,13 @@ function writeAction(name, action) {
   $('.chatlines').append('<li class="action">' + name + ' ' + actionStrings[action] + '</li>');
 }
 
+// socket.on('chat', function(data) {
+// 	socket.broadcast.emit('chat', data);
+// });
 
+// socket.on('action', function(data) {
+//   socket.broadcast.emit('action', data);
+// });
 
 $(document).ready(function() {
 

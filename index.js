@@ -27,10 +27,3 @@ io.sockets.on('connection', function(socket) {
 });
 });
 
-io.sockets.on('chat', function(data) {
-	socket.broadcast.emit('chat', data);
-});
-
-io.sockets.on('action', function(data) {
-  socket.broadcast.emit('action', data);
-});
